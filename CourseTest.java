@@ -102,7 +102,8 @@ public class CourseTest {
 		System.out.println("* 2 - Leave course                     *");
 		System.out.println("* 3 - View available courses           *");
 		System.out.println("* 4 - View student courses             *");
-		System.out.println("* 5 - Back to main menu                *");
+		System.out.println("* 5 - View total price                 *");
+		System.out.println("* 6 - Back to main menu                *");
 		System.out.println("****************************************");
 	}
 
@@ -334,8 +335,11 @@ public class CourseTest {
 					case 4:
 						student.viewStudentCourses();
 						break;
-					// Exits the student menu and goes back to the main menu
 					case 5:
+						System.out.println("Your total price is: " + student.totalPrice() + "SR");
+						break;
+					// Exits the student menu and goes back to the main menu
+					case 6:
 						studentMenu = false;
 					default:
 						System.out.println("Invalid input please try again");
